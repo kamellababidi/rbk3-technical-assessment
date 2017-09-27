@@ -10,8 +10,8 @@
     "lint": "eslint ./"
   },
   "dependencies": {
-    "body-parser": "^1.13.3",
-    "express": "^4.13.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
