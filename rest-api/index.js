@@ -14,7 +14,7 @@ app.post('/api/users',function(req,res){
 	 var name1=req.body.name;
 	 var email1=req.body.email;
 	 var x={name:name1,email:email1}
-	 Users.addOne({name:name1,email:email1})
+	 Users.addOne(x)
 	 res.status(201)
 	 res.send(JSON.stringify(x))
 })
