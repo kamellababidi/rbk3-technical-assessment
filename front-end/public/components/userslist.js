@@ -1,8 +1,5 @@
 angular.module('system')
 .component('userslist',{
-	controller:function(){
-
-	},
 	bindings:{
 		users:'<'
 	},
