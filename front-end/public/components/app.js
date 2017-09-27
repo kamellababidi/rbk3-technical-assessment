@@ -1,16 +1,18 @@
 angular.module('system',[])
 .component('app',{
 	controller:function(){
-		this.users=[{name:'kamel',email:'sdsds'}, {name:'sdsd',email:'sdssssssssds'}];
+		this.users=[];
 		var x=this;
 		this.showuser=function(){
-			alert('waw')
 			$.ajax({
 				url:'http://127.0.0.1:3000/users',
+				async:false,
 				success:function(data){
-					x.users=data;
+					var realdata=JSON.parse(data)
+					console.log(realdata[0])
+					x.users=realdata;
 				}
-			})
+			});
 		}
 	},
 	template:`
