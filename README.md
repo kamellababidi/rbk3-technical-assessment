@@ -1,6 +1,6 @@
 # Welcome to your assessment  
 
-Are you ready to put your skills to the test and have some full stack hacking fun? This assessment will be like a day-long solo sprint where you get use the skills and technologies you have worked with during the first half of the course. You should expect to revisit concepts and techniques you are familiar with while learning some new content as well.
+Are you ready to put your skills to the test and have some full stack hacking fun? This assessment will be like a day-long solo sprint where you get use the skills and technologies you have worked with during the first half of the course. 
 
 ### Don'ts
 
@@ -19,7 +19,38 @@ Are you ready to put your skills to the test and have some full stack hacking fu
 
 This assement is designed to test what you have learned over the last 6 weeks.
 
-### Guidelines
+## GitHub Guidelines
+
+* Make sure your git is configured correctly, If you are not using your personal laptop, please do the following :
+
+1. Check there’s no previous git config
+`git config user.name`
+`git config user.email`
+2. If there’s a config you need to remove it: 
+`git config --global --unset user.name "previous_name"`
+`git config --global --unset user.email previous_email`
+3. Now you need to add your config:
+`git config --global  user.name "your_name"`
+`git config --global  user.email your_email`
+4. open keychain, and check if there is any github account, and delete it.
+5. Now you can fork, clone and commit safely. 
+
+Assessments are meant to give you and RBK staff an idea of how well you understand, or can figure out, the material that you covered recently.
+
+- Turn off all communication devices such as your phone, email, Slack, etc.
+- Fork this repo and clone down your fork to your laptop.
+- Commit **working** code early and often (at least after every prompt). You are graded on your commit messages in addition to the code that you write
+
+`[When this code is committed it will] Complete the basic-iteration prompt`
+
+- Do at least a little work on *every* prompt, even if you only leave comments that describe your intent. **Leaving a prompt blank is tantamount to failing a prompt. You'll get much more credit even for writing comments or pseudo-code that describe your intent**
+- You **must** submit a pull request for all assessments **on time** (guidelines for how to submit a pull request are below). Give yourself several minutes to do this at the end of the time allotted for the assessment
+- The help button is available to you during assessments, how often you use it is up to your own discretion
+- After completing the assessment, if there are any prompts you felt you did not do well on, or, that you would not know how to assess whether or not you did well on, make plans to improve your skills on that topic **as soon as possible.**
+
+
+
+### General Guidelines
 
 This Assesment is split into 4 different parts. Each part is in each own folder and has it's own README file. Please read this README first, then refer to the README for each section. Each README has it's own rules on what resources you are allowed to use. At no point are you allowed to use your prior sprint code, work with any partner or look at your neighbors code. Cheaters will be removed!
 
