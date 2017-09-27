@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "test": "mocha --require ../node_modules/babel-core/register models/UserTest.js models/JobTest.js controllers/userControllerTest.js controllers/jobControllerTest.js"
+  }
+}
