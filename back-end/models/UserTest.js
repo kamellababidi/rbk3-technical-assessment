@@ -11,6 +11,4 @@ describe('User Model', function () {
   it('should have a schema', function () {
     expect(User.schema).to.exist;
   });
-
-
 });
