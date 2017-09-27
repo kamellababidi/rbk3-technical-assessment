@@ -6,8 +6,12 @@ var app = express();
 app.use(bodyParser.json());
 
 // YOUR CODE BELOW
-
-
+app.get('/api/users',function(req,res){
+	res.send(JSON.stringify(Users.getAll()));
+})
+// app.post('/api/users',function(){
+	
+// })
 
 // Do not touch this invocation of the `listen` method
 app.listen('8888', function () {
