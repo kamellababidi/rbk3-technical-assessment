@@ -61,5 +61,7 @@ exports.updateOne = function (id, newProperties) {
 };
 
 exports.deleteOne = function (id) {
+  var x=users[id-1]
   users.splice(id-1,1)
+  return x;
 };

@@ -33,7 +33,12 @@ app.put('/api/users/:tagId',function(req,res){
 	res.status(200)
 	res.send(JSON.stringify(x))
 })
-
+app.delete('/api/users/:tagId',function(req,res){
+	var p=parseInt(req.params.tagId);
+	var x=Users.deleteOne(p)
+	res.status(200)
+	res.send(JSON.stringify(x))
+})
 
 
 // Do not touch this invocation of the `listen` method
