@@ -55,6 +55,7 @@ exports.updateOne = function (id, newProperties) {
     if(users[i].id===id){
         users[i].name=newProperties.name;
         users[i].email=newProperties.email;
+        return users[i]
     }
   }
 };

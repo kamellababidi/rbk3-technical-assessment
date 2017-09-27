@@ -26,6 +26,16 @@ app.get('/api/users/:tagId',function(req,res){
 	res.status(200)
 	res.send(JSON.stringify(x));
 })
+app.put('/api/users/:tagId',function(req,res){
+	var p=parseInt(req.params.tagId);
+	var obj={name:req.body.name , email:req.body.email}
+	var x=Users.updateOne(p,obj);
+	res.status(200)
+	res.send(JSON.stringify(x))
+})
+
+
+
 // Do not touch this invocation of the `listen` method
 app.listen('8888', function () {
   console.log('listening on 8888');
