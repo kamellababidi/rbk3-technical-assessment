@@ -28,10 +28,13 @@ app.get('/api/users/:tagId',function(req,res){
 })
 app.put('/api/users/:tagId',function(req,res){
 	var p=parseInt(req.params.tagId);
-	var obj={name:req.body.name , email:req.body.email}
-	var x=Users.updateOne(p,obj);
-	res.status(200)
-	res.send(JSON.stringify(x))
+	if(req.body.name && req.body.email){
+		var obj={name:req.body.name , email:req.body.email}
+	    var x=Users.updateOne(p,obj);
+	    res.status(200)
+	    res.send(JSON.stringify(x))
+	}
+	
 })
 app.delete('/api/users/:tagId',function(req,res){
 	var p=parseInt(req.params.tagId);
