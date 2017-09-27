@@ -3,6 +3,8 @@
     "test": "mocha --require ../node_modules/babel-core/register models/UserTest.js models/JobTest.js controllers/userControllerTest.js controllers/jobControllerTest.js"
   },
   "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
     "mongoose": "^4.11.13"
   }
 }

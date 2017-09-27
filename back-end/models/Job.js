@@ -4,8 +4,11 @@ var mongoose=require('mongoose');
 var Schema=mongoose.Schema;
 //make acctual schema which is jobs
 var jobschema = new Schema({
-	user_name: String ,
-	job : String
+	company: String,
+	title: String,
+	description: String,
+	postedDate: String,
+	salary : Number
 });
 //make mode for this schema 
 var jobs=mongoose.model('jobs',jobschema);
